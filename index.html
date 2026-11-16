@@ -89,22 +89,36 @@
 
     <div class="projects-grid">
 
-      <!-- Project 1: Linear Regression -->
-      <article class="project-card fade-in" id="project-linear-regression">
-        <div class="project-icon" aria-hidden="true">📈</div>
-        <h3 data-i18n="proj1-title">Linear Regression Analysis</h3>
+      <!-- Project 1: Health Insurance Costs -->
+      <article class="project-card clickable fade-in" id="project-linear-regression">
+        <div class="project-img-wrap">
+          <img src="projects/medical_stethoscope.jpg" alt="Egészségbiztosítási Költségek OLS Regressziós Elemzése"
+            loading="lazy" />
+          <div class="project-icon" aria-hidden="true">📈</div>
+        </div>
+        <h3 data-i18n="proj1-title">Health Insurance Costs</h3>
         <p data-i18n="proj1-desc">
-          An end-to-end regression case study exploring the relationship between
-          continuous variables. Covers exploratory data analysis, assumption testing,
-          model fitting, and interpretation of coefficients.
+          An end-to-end econometric regression case study on healthcare insurance costs: exploratory data analysis
+          (EDA), multicollinearity screening (VIF), interaction modeling, automated backward elimination, and HC3 robust
+          diagnostics.
         </p>
         <div class="project-tags">
           <span class="tag">Python</span>
-          <span class="tag">statsmodels</span>
+          <span class="tag purple">statsmodels</span>
           <span class="tag">sklearn</span>
+          <span class="tag green">OLS</span>
         </div>
-        <a href="#" class="project-link disabled" aria-disabled="true" id="link-linear" data-i18n="coming-soon">Coming
-          soon →</a>
+        <div class="project-footer">
+          <a href="projects/insurance_report.html" target="_blank" rel="noopener" class="project-link" id="link-linear"
+            data-i18n="proj1-link">View Analysis →</a>
+          <a href="https://github.com/KovacsImi/Linear-Regression" target="_blank" rel="noopener noreferrer"
+            class="project-github-link" title="GitHub Repository" aria-label="GitHub Repository">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+        </div>
       </article>
 
       <!-- Project 2: Binomial / Logistic Regression -->
@@ -121,8 +135,11 @@
           <span class="tag">Python</span>
           <span class="tag">sklearn</span>
         </div>
-        <a href="#" class="project-link disabled" aria-disabled="true" id="link-logistic" data-i18n="coming-soon">Coming
-          soon →</a>
+        <div class="project-footer">
+          <a href="#" class="project-link disabled" aria-disabled="true" id="link-logistic"
+            data-i18n="coming-soon">Coming
+            soon →</a>
+        </div>
       </article>
 
       <!-- Project 3: XGBoost -->
@@ -139,8 +156,11 @@
           <span class="tag">XGBoost</span>
           <span class="tag">SHAP</span>
         </div>
-        <a href="#" class="project-link disabled" aria-disabled="true" id="link-xgboost" data-i18n="coming-soon">Coming
-          soon →</a>
+        <div class="project-footer">
+          <a href="#" class="project-link disabled" aria-disabled="true" id="link-xgboost"
+            data-i18n="coming-soon">Coming
+            soon →</a>
+        </div>
       </article>
 
     </div>
@@ -237,8 +257,9 @@
         'btn-download-cv': '<a id="btn-download-cv" class="btn btn-secondary" href="Kovacs_Imre_CV_eng.pdf" download>⬇️ Download CV</a>',
         'projects-label': 'Work',
         'projects-heading': 'Data Science <span class="gradient-text">Showcases</span>',
-        'proj1-title': 'Linear Regression Analysis',
-        'proj1-desc': 'An end-to-end regression case study exploring the relationship between continuous variables. Covers exploratory data analysis, assumption testing, model fitting, and interpretation of coefficients.',
+        'proj1-title': 'Health Insurance Costs',
+        'proj1-desc': 'An end-to-end econometric regression case study on healthcare insurance costs: exploratory data analysis (EDA), multicollinearity screening (VIF), interaction modeling, automated backward elimination, and HC3 robust diagnostics.',
+        'proj1-link': 'View Analysis →',
         'proj2-title': 'Binomial Logistic Regression',
         'proj2-desc': 'A classification deep-dive using logistic regression on a real-world binary outcome. Includes odds-ratio interpretation, ROC-AUC evaluation, and visualisation of decision boundaries.',
         'proj3-title': 'XGBoost Model',
@@ -270,8 +291,9 @@
         'btn-download-cv': '<a id="btn-download-cv" class="btn btn-secondary" href="Kovacs_Imre_CV_hun.pdf" download>⬇️ Önéletrajz letöltése</a>',
         'projects-label': 'Munkák',
         'projects-heading': 'Bemutató <span class="gradient-text">Portfólio</span>',
-        'proj1-title': 'Lineáris Regresszió Elemzés',
-        'proj1-desc': 'Teljes körű regressziós esettanulmány, amely folytonos változók közötti összefüggéseket vizsgál. Lefedi az exploratív adatelemzést, a feltételek tesztelését, a modellillesztést és az együtthatók értelmezését.',
+        'proj1-title': 'Egészségbiztosítási Költségek',
+        'proj1-desc': 'Egészségbiztosítási költségek ökonometriai és OLS regressziós esettanulmánya: feltáró adatelemzés (EDA), multikollinearitás-szűrés (VIF), interakciós modellezés és robusztus diagnosztika.',
+        'proj1-link': 'Elemzés megtekintése →',
         'proj2-title': 'Binomiális Logisztikus Regresszió',
         'proj2-desc': 'Besorolási elemzés logisztikus regresszióval valós bináris kimenetelre. Tartalmazza az esélyhányados értelmezését, ROC-AUC kiértékelést és a döntési határok vizualizációját.',
         'proj3-title': 'XGBoost Modell',
@@ -364,6 +386,20 @@
     );
 
     sections.forEach((sec) => navObserver.observe(sec));
+
+    /* ─────────────────────────────────────────────
+       PROJECT CARD CLICK HANDLER
+    ───────────────────────────────────────────── */
+    const linearCard = document.getElementById('project-linear-regression');
+    if (linearCard) {
+      linearCard.addEventListener('click', (e) => {
+        // Do not trigger card click if the user clicked directly on the GitHub link or the view analysis button
+        if (e.target.closest('.project-github-link') || e.target.closest('#link-linear')) {
+          return;
+        }
+        window.open('projects/insurance_report.html', '_blank', 'noopener');
+      });
+    }
   </script>
 
 </body>
